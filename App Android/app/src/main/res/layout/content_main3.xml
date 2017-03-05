@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.carlos.smartcar.Main3Activity"
+    tools:showIn="@layout/activity_main3">
+
+    <TextView
+        android:text="¿Cómo hacerlo funcionar?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/instrucciones"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Smart Car utiliza la tecnología OBDII para captar información de tu coche a tiempo real. Nosotros traducimos esa información por ti, mostrandote como se siente tu coche en cada momento. Cuando hayas acabado con tu viaje puedes volver a ver tu recorrido desde el móvil o nuestra web y saber que estilo de conducción tienes, si le pisas demasiado al acelerador o eres bueno economizando combustible. Para que nuestro programa funcione correctamente tendrás que tener instalada la aplicación de Torque, gracias a ella y un adptador OBDII podremos ayudarte a ahorrar combustible."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
