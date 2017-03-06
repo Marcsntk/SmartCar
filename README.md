@@ -1,3 +1,3 @@
 # SmartCar
 
-App for Andoid
+App for Andoid 5.0
