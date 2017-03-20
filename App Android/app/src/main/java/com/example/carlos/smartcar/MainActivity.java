@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Esta linea de codigo se utiliza para mostrar la flecha en el toolbar
+        getSupportActionBar().setDisplayShowTitleEnabled(true); //Esta linea de codigo muestra el titulo en el toolbar
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -62,6 +63,12 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    /**
+     * Menú desplegable de opciones
+     * @param item
+     * @return
+     */
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -88,6 +95,12 @@ public class MainActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+
+    /**
+     * Menú desplegable lateral
+     * @param item
+     * @return
+     */
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {

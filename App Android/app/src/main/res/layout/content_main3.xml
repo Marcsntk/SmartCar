@@ -13,18 +13,6 @@
     tools:context="com.example.carlos.smartcar.Main3Activity"
     tools:showIn="@layout/activity_main3">
 
-    <TextView
-        android:text="¿Cómo hacerlo funcionar?"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView6"
-        android:textStyle="normal|bold"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        android:layout_marginTop="24dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,12 +22,13 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Smart Car utiliza la tecnología OBDII para captar información de tu coche a tiempo real. Nosotros traducimos esa información por ti, mostrandote como se siente tu coche en cada momento. Cuando hayas acabado con tu viaje puedes volver a ver tu recorrido desde el móvil o nuestra web y saber que estilo de conducción tienes, si le pisas demasiado al acelerador o eres bueno economizando combustible. Para que nuestro programa funcione correctamente tendrás que tener instalada la aplicación de Torque, gracias a ella y un adptador OBDII podremos ayudarte a ahorrar combustible."
+        android:text="¿Cómo hacerlo funcionar?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView9"
+        android:id="@+id/textView6"
+        android:textStyle="normal|bold"
         android:textColor="@color/colorPrimary"
-        android:textSize="14sp"
-        android:layout_below="@+id/imageView4"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 </RelativeLayout>

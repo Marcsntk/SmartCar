@@ -21,7 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
+        <activity android:name=".Main2Activity"
+            android:parentActivityName=".MainActivity"
+            />
         //Como hay distintos Mains que se ejecutan depeniendo de las acciones, hay que ponerlas
         aquí.
         <activity android:name=".Register">
@@ -35,10 +37,12 @@
         </activity>
         <activity
             android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/title_activity_settings" />
         <activity
             android:name=".Main3Activity"
             android:label="@string/title_activity_main3"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".faq"
