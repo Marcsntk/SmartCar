@@ -64,7 +64,7 @@ public class MainActivityLOG extends AppCompatActivity {
                 //Intenta contactar con la pagina que tiene los comandos de la BBDD.
                 //En esta DEMO, es un DNS que redirige al PC de mi casa, que es el que administra
                 //la BBDD, y donde estan las paginas PhP que facilitan todo el trabajo.
-                URL url = new URL("http://sylvermor.no-ip.org/app/login.php");
+                URL url = new URL("https://smartcar.000webhostapp.com/PHP/login.php");
                 String urlParams = "email="+email+"&password="+password;
 
                 //Aqui ya si que no tengo ni zorra.
