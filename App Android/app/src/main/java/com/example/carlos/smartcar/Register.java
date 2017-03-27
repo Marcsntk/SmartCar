@@ -78,7 +78,7 @@ public class Register extends Activity {
                     //Intenta contactar con la pagina que tiene los comandos de la BBDD.
                     //En esta DEMO, es un DNS que redirige al PC de mi casa, que es el que administra
                     //la BBDD, y donde estan las paginas PhP que facilitan todo el trabajo.
-                    URL url = new URL("http://sylvermor.no-ip.org/app/register.php");
+                    URL url = new URL("https://smartcar.000webhostapp.com/PHP/register.php");
                     String urlParams = "name=" + name + "&password=" + password + "&email=" + email;
 
                     //Aqui ya si que no tengo ni zorra.
