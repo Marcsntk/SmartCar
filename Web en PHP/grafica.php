@@ -11,9 +11,11 @@
 		<?php
 			require "PHP/init.php";
 			session_start();
-			$sql = "SELECT IDFile FROM `torque` WHERE `eMail`='".$_SESSION["idUsuario"]."' GROUP BY IDFile ";
+			$tipo=$_GET["tipo"];
+			$sql = "SELECT Trip_Distance,".$tipo." FROM `torque` WHERE `eMail`='".$_SESSION["idUsuario"]."' AND `IDFile` ='".$_SESSION["IDFile"]."'  ORDER BY Row ASC";
 
 			$result = mysqli_query($con, $sql);
+			$result2 = mysqli_query($con, $sql);
 		?>
 		
 		<header>
@@ -52,14 +54,47 @@
 				</ul>
 			</center>
 		</nav> 
-		<ul>
-			<?php
-			while($row = mysqli_fetch_array($result)){
-				echo "<li><a href='ruta.php?IDFile=".$row[0]."'>".$row[0]."</a></li>";
-			}
-		?>
-		</ul>
 		
+				
+		<div id='body_div'>
+			<center><h2><?php echo $tipo ?> a través de la ruta</h2></center></br>
+
+			<script src="Chart.js"></script>
+
+			<canvas id="chart-area4" width="150" height="50"></canvas>
+
+			<script>
+				var lineChartData = {
+					labels : [<?php
+						while($row = mysqli_fetch_array($result)){
+							echo "".$row["Trip_Distance"].",";
+						}
+					?> ],
+					datasets : [
+						{
+							label: "Primera serie de datos",
+							fillColor : "rgba(220,220,220,0.2)",
+							strokeColor : "#6b9dfa",
+							pointColor : "#1e45d7",
+							pointStrokeColor : "#fff",
+							pointHighlightFill : "#fff",
+							pointHighlightStroke : "rgba(220,220,220,1)",
+							data : [<?php
+								while($row2 = mysqli_fetch_array($result2)){
+									echo "".$row2[1].",";
+								}
+							?>  ]
+						}
+					]
+
+				}
+
+				var ctx4 = document.getElementById("chart-area4").getContext("2d");
+
+				window.myPie = new Chart(ctx4).Line(lineChartData, {responsive:true});
+			</script>
+		</div>
+
 		
 		<script type="text/javascript">
 			$(document).ready(function() {

@@ -11,9 +11,7 @@
 		<?php
 			require "PHP/init.php";
 			session_start();
-			$sql = "SELECT IDFile FROM `torque` WHERE `eMail`='".$_SESSION["idUsuario"]."' GROUP BY IDFile ";
-
-			$result = mysqli_query($con, $sql);
+			$_SESSION["IDFile"]=$_GET["IDFile"];
 		?>
 		
 		<header>
@@ -52,14 +50,16 @@
 				</ul>
 			</center>
 		</nav> 
+		
 		<ul>
-			<?php
-			while($row = mysqli_fetch_array($result)){
-				echo "<li><a href='ruta.php?IDFile=".$row[0]."'>".$row[0]."</a></li>";
-			}
-		?>
+			<li><a href="grafica.php?tipo=GPS_Speed">Velocidad</a></li>
+			<li><a href="grafica.php?tipo=Altitude">Perfil de la ruta</a></li>
+			<li><a href="grafica.php?tipo=TripLpHKM">Consumo de Gasolina L/100Km</a></li>
+			<li><a href="grafica.php?tipo=Engine_Temp">Temperatura del motor</a></li>
 		</ul>
 		
+		
+
 		
 		<script type="text/javascript">
 			$(document).ready(function() {
