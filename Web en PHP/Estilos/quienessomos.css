@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin:0;}
+
+
+.logo{
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin: 10px;	
+	cursor: pointer;	
+}
+
+
+.title-left{
+    float: left;
+    width: 35%;
+    height: 75px;
+    margin: 10px 20px;
+	text-align:left;
+	line-height: 78px;
+	font-size: 350%;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: #2360a5;
+}
+
+.title-left:hover, .menu:hover, .descargar:hover{
+	color:black;	
+	cursor: pointer;	
+}
+
+.user{
+	float: right;
+    width: 85px;
+    height: 85px;
+    margin: 5px;
+	background-color:#2360a5;
+}
+
+.user:hover{
+	background-color:black;	
+	cursor: pointer;
+}
+
+.menu{
+	float: right;
+    width: inherit;
+    height: 75px;
+    margin: 10px;
+	text-align:left;
+	line-height: 78px;
+	font-size: 150%;
+	color: #2360a5;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:visited{
+	color: #2360a5;	
+}
+
+a.active{
+	color: black;	
+}
+
+a:hover {
+	color: black;	
+}
+
+article{
+	width:80%;
+	height:90%;
+	margin: 5% 5% 10% 10%;
+	float:left;
+	font-size:150%;
+	color: white;
+}
+
+#nosotros{
+	clear: left;
+	float:left;
+	width:35%;
+	margin:5% 0% 0% 5%;
+	height:315px;
+	background-color: #2360a5;
+	color:white;
+	font-size:80%;
+	text-align:justify;
+}
+
+#video{
+	float:left;
+	width:45%;
+	margin:5% 5% 0% 0%;
+	height:400px;
+}
+
+
