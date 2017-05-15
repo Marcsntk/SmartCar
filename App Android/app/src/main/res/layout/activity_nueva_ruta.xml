@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Datos de la nueva ruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Latitud:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_weight="1"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/editText6"
+            android:textAlignment="textStart"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_alignStart="@+id/editText5" />
+
+        <TextView
+            android:text="Longitud:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/editText5"
+            android:layout_alignBottom="@+id/editText5"
+            android:layout_alignStart="@+id/textView9" />
+
+        <TextView
+            android:text="Nombre:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:layout_marginTop="38dp"
+            android:layout_below="@+id/editText5"
+            android:layout_alignStart="@+id/textView11" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:textAlignment="textStart"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_alignStart="@+id/editText5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/editText6"
+            android:layout_alignStart="@+id/lblLatitut" />
+
+        <ToggleButton
+            android:text="Tu ubicación"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnActualizar"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/editText4"
+            android:layout_alignStart="@+id/textView12"
+            android:checked="false"
+            android:textOff="Localizarte"
+            android:textOn="Tu ubicación" />
+
+        <TextView
+            android:text="Latitud:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/btnActualizar"
+            android:layout_alignStart="@+id/btnActualizar"
+            android:visibility="invisible" />
+
+        <TextView
+            android:text="Longitud:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:layout_below="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblLatitut"
+            android:textSize="18sp"
+            android:layout_above="@+id/textView15"
+            android:layout_toEndOf="@+id/textView15"
+            android:layout_marginStart="11dp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblLongitud"
+            android:layout_alignStart="@+id/lblLatitut"
+            android:layout_alignEnd="@+id/lblLatitut"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_alignTop="@+id/textView15"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible" />
+
+        <Button
+            android:text="Crear nueva ruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/buttonNuevaRuta"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/editText4" />
+
+    </RelativeLayout>
+</RelativeLayout>

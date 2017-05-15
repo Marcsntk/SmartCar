@@ -5,6 +5,15 @@
     <!-- Permisos de internet -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,33 +30,62 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"
-            android:parentActivityName=".MainActivity"
-            />
-        //Como hay distintos Mains que se ejecutan depeniendo de las acciones, hay que ponerlas
-        aquí.
-        <activity android:name=".Register">
-            //El Register, como su nombre indica, se ejecuta cuando intenta registrarse a la BBDD.
-        </activity>
-        <activity android:name=".Home">
-            //El .home es, sencillamente, el layout y los comandos del login.
-        </activity>
-        <activity android:name=".MainActivityLOG">
-            //El .home es, sencillamente, el layout y los comandos del login.
+        <activity
+            android:name=".settings_help.Quienesomos"
+            android:parentActivityName=".MainActivity" />
+        <!--Como hay distintos Mains que se ejecutan depeniendo de las acciones, hay que ponerlas aquí.-->
+        <activity
+            android:name=".register_log.Register"
+            android:parentActivityName=".MainActivity" />
+        <!--El Register, como su nombre indica, se ejecuta cuando intenta registrarse a la BBDD.-->
+        <activity android:name=".register_log.Home">
+
+        <!--El .home es, sencillamente, el layout y los comandos del login.-->
         </activity>
         <activity
-            android:name=".SettingsActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/title_activity_settings" />
+            android:name=".register_log.Login"
+            android:parentActivityName=".MainActivity" />
+        <!--El .home es, sencillamente, el layout y los comandos del login.-->
         <activity
-            android:name=".Main3Activity"
+            android:name=".settings_help.Ajustes"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".rutas.NuevaRuta"
+            android:label="@string/title_activity_nueva_ruta"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SelecArxiu"
+            android:label="Selección del archivo"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".settings_help.Comofuncionar"
             android:label="@string/title_activity_main3"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".faq"
-            android:label="@string/title_activity_faq"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".rutas.MisRutas"
+            android:label="Mis rutas"
+            android:parentActivityName=".MainActivity" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".rutas.MapaNuevaRuta"
+            android:label="@string/title_activity_nueva_rtua"></activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
