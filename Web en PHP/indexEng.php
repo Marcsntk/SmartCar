@@ -75,7 +75,8 @@
     
     <footer>
     </br>
-    <center>If you have any doubt, visit our F.A.Q. section!</center>
+    <center>If you have any doubt, visit our F.A.Q. section!</br>
+	<a href="indexEng.php">Website in spanish</a></center></center>
     </footer> 
     
 	</body>

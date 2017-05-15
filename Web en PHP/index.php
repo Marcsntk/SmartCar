@@ -74,7 +74,8 @@
     
     <footer>
     </br>
-    <center>¡Si tienes dudas visita nuestra sección de F.A.Q.!</center>
+    <center>¡Si tienes dudas visita nuestra sección de F.A.Q.!</br>
+	<a href="indexEng.php">Pàgina en inglés</a></center>
     </footer> 
     
 	</body>

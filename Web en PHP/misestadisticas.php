@@ -11,7 +11,7 @@
 		<?php
 			require "PHP/init.php";
 			session_start();
-			$sql = "SELECT AVG(GPS_Speed) FROM `torque` WHERE `eMail`='".$_SESSION["idUsuario"]."';";
+			$sql = "SELECT AVG(GPS_Speed), AVG(TripLpHKm), AVG(Engine_Temp), AVG(Trip_Distance) FROM `torque` WHERE `eMail`='".$_SESSION["idUsuario"]."';";
 
 			$result = mysqli_query($con, $sql);
 		?>
@@ -52,14 +52,14 @@
 				</ul>
 			</center>
 		</nav> 
-
+		<ul>
 		<?php 
 			while($row = mysqli_fetch_array($result)){
-				echo "Velocidad media: ".$row[0]." .";
+				echo "<li>Velocidad media: ".$row[0]." .</li><li> Consumo medio: ".$row[1]." .</li><li> Temperatura media: ".$row[2]." .</li><li> Distancia media: ".$row[3]." .</li>";
 			}
 			
 		?>
-
+		</ul>
 		
 		<script type="text/javascript">
 			$(document).ready(function() {
