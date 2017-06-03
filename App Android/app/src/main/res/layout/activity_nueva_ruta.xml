@@ -98,14 +98,15 @@
             android:layout_alignStart="@+id/lblLatitut" />
 
         <ToggleButton
-            android:text="Tu ubicación"
+            android:id="@+id/btnActualizar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnActualizar"
-            android:layout_marginTop="17dp"
-            android:layout_below="@+id/editText4"
             android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/editText4"
+            android:layout_marginTop="17dp"
             android:checked="false"
+            android:text="Tu ubicación"
+            android:textColor="@color/colorPrimary"
             android:textOff="Localizarte"
             android:textOn="Tu ubicación" />
 
@@ -163,13 +164,14 @@
             android:visibility="invisible" />
 
         <Button
-            android:text="Crear nueva ruta"
+            android:id="@+id/buttonNuevaRuta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:id="@+id/buttonNuevaRuta"
+            android:layout_alignEnd="@+id/editText4"
             android:layout_alignParentBottom="true"
-            android:layout_alignEnd="@+id/editText4" />
+            android:layout_marginBottom="30dp"
+            android:text="Crear nueva ruta"
+            android:textColor="@color/colorPrimary" />
 
     </RelativeLayout>
 </RelativeLayout>

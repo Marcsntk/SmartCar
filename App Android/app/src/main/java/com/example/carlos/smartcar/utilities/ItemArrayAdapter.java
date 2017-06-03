@@ -16,8 +16,10 @@ public class ItemArrayAdapter extends ArrayAdapter<String[]> {
 	private List<String[]> scoreList = new ArrayList<String[]>();
 
     static class ItemViewHolder {
-        TextView name;
-        TextView score;
+        TextView devicetime;
+        TextView longitude;
+        TextView latitude;
+        TextView gpsspeed;
     }
 
     public ItemArrayAdapter(Context context, int textViewResourceId) {
@@ -49,15 +51,21 @@ public class ItemArrayAdapter extends ArrayAdapter<String[]> {
                     getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			row = inflater.inflate(R.layout.item_layout, parent, false);
             viewHolder = new ItemViewHolder();
-            viewHolder.name = (TextView) row.findViewById(R.id.name);
-            viewHolder.score = (TextView) row.findViewById(R.id.score);
+            viewHolder.devicetime = (TextView) row.findViewById(R.id.devicetime);
+            viewHolder.longitude = (TextView) row.findViewById(R.id.longitude);
+            viewHolder.latitude = (TextView) row.findViewById(R.id.latitude);
+            viewHolder.gpsspeed = (TextView) row.findViewById(R.id.gpsspeed);
+
             row.setTag(viewHolder);
 		} else {
             viewHolder = (ItemViewHolder)row.getTag();
         }
         String[] stat = getItem(position);
-        viewHolder.name.setText(stat[0]);
-        viewHolder.score.setText(stat[1]);
-		return row;
+        viewHolder.devicetime.setText(stat[0]);
+        viewHolder.longitude.setText(stat[1]);
+        viewHolder.latitude.setText(stat[2]);
+        viewHolder.gpsspeed.setText(stat[3]);
+
+        return row;
 	}
 }

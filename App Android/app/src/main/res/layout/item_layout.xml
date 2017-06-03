@@ -2,23 +2,41 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/name"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorPrimary"
-        android:textSize="10sp" />
 
     <TextView
+        android:id="@+id/devicetime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/score"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="5dp"
         android:textColor="@color/colorPrimary"
-        android:textSize="10sp" />
+        android:textSize="8sp" />
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="250dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="400dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="8sp" />
+    <TextView
+        android:id="@+id/gpsspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="8sp" />
+
 </RelativeLayout>

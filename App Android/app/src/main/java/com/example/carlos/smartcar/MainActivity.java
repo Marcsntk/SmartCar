@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.carlos.smartcar.photography.MainFoto;
 import com.example.carlos.smartcar.register_log.Login;
 import com.example.carlos.smartcar.register_log.Register;
 import com.example.carlos.smartcar.rutas.NuevaRuta;
@@ -114,13 +115,13 @@ public class MainActivity extends AppCompatActivity
         {
             finish();
         }
-        else if (id == R.id.login)
-        {
-            startActivity(new Intent(MainActivity.this, Login.class));
-        }
         else if (id == R.id.regist)
         {
             startActivity(new Intent(MainActivity.this, Register.class));
+        }
+        else if (id == R.id.login)
+        {
+            startActivity(new Intent(MainActivity.this, Login.class));
         }
 
         return super.onOptionsItemSelected(item);
@@ -157,6 +158,8 @@ public class MainActivity extends AppCompatActivity
             //Opcion Nueva ruta
             startActivity(new Intent(MainActivity.this, NuevaRuta.class));
 
+        } else if (id == R.id.nav_photos) {
+            startActivity(new Intent(MainActivity.this, MainFoto.class));
         } else if (id == R.id.nav_send) {
             startActivity(new Intent(MainActivity.this, SelecArxiu.class));
         }

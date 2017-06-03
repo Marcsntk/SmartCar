@@ -50,9 +50,9 @@ public class Home extends Activity{
         Err = getIntent().getStringExtra("err");
 
         //Declara las variables del layout acorde a las variables recogidas de la BBDD.
-        nameTV.setText("Welcome "+name);
-        passwordTV.setText("Your password is "+password);
-        emailTV.setText("Your email is "+email);
+        nameTV.setText("Bienvenido " + name);
+        passwordTV.setText("Tu contraseña encriptada es: "+password);
+        emailTV.setText("Tu email es: "+email);
         err.setText(Err);
     }
 

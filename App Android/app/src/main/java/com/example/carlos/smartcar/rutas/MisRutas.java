@@ -9,6 +9,7 @@ import com.example.carlos.smartcar.utilities.CSVFile;
 import com.example.carlos.smartcar.utilities.ItemArrayAdapter;
 import com.example.carlos.smartcar.R;
 
+import java.io.File;
 import java.io.InputStream;
 import java.util.List;
 
@@ -27,7 +28,6 @@ public class MisRutas extends AppCompatActivity {
         Parcelable state = listView.onSaveInstanceState();
         listView.setAdapter(itemArrayAdapter);
         listView.onRestoreInstanceState(state);
-
         InputStream inputStream = getResources().openRawResource(R.raw.tracklog);
         CSVFile csvFile = new CSVFile(inputStream);
         List<String[]> scoreList = csvFile.read();
