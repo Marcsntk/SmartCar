@@ -26,7 +26,7 @@
 			?>
 			<?php
 			if ($_SESSION["idUsuario"] != "") {
-				?><div class="menu"><a href="/PHP/session_destroy.php">Cerrar Sesión</a></div><?php
+				?><div class="menu"><a class="active" href="/PHP/session_destroy.php"><img src="imagenes/exit.png" width="90%" height="90%" /></div><?php
 			}
 			?>
 			<div class="menu"><a href="mailto:andresnicolau@hotmail.com?Subject=SmartCar" target="_top">Contacto</a></div>
@@ -48,12 +48,35 @@
 				</ul>
 			</center>
 		</nav>  
+		<center>
+			<section id="info">
+				<center>
+				  
+				  <div class="usuario"><img src="imagenes/usuario_redondo.png" width="250px" height="250px" /></div>
+					  <section id="loginusuario">
+						
+						<?php
+							//Mostrar el correo del usuario, dato guardado en la sesión como "idUsuario"
+							echo "<p id='correo'>".$_SESSION["idUsuario"]."</p>";
+						?>
+					  </section>
+					  <section id="logincontrasena">
+						<?php
+							//Mostrar el nombre del usuario, dato guardado en la sesión como "nombre"
+							echo "<p id='nombre'>".$_SESSION["nombre"]."</p>";
+						?>
+					  </section>
+					</br>
+					</br>
+						<section id="recuperar">
+							<p><a id="cambiar" href="cambiar.php">Cambiar la contraseña</a></p>
+						</section>
+				  
+				</center>
+			</section>
+		 </center>
 		
-		<?php
-			echo "Email: ".$_SESSION["idUsuario"].".<br>";
-			echo "Nombre: ".$_SESSION["nombre"]."."; 
-		?>
-
+		
 
 		
 		<script type="text/javascript">

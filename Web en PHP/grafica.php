@@ -13,7 +13,6 @@
 			session_start();
 			$tipo=$_GET["tipo"];
 			$sql = "SELECT Trip_Distance,".$tipo." FROM `torque` WHERE `eMail`='".$_SESSION["idUsuario"]."' AND `IDFile` ='".$_SESSION["IDFile"]."'  ORDER BY Row ASC";
-
 			$result = mysqli_query($con, $sql);
 			$result2 = mysqli_query($con, $sql);
 		?>
@@ -32,7 +31,7 @@
 			?>
 			<?php
 			if ($_SESSION["idUsuario"] != "") {
-				?><div class="menu"><a href="/PHP/session_destroy.php">Cerrar Sesión</a></div><?php
+				?><div class="menu"><a class="active" href="/PHP/session_destroy.php"><img src="imagenes/exit.png" width="90%" height="90%" /></div><?php
 			}
 			?>
 			<div class="menu"><a href="mailto:andresnicolau@hotmail.com?Subject=SmartCar" target="_top">Contacto</a></div>
@@ -55,10 +54,10 @@
 			</center>
 		</nav> 
 		
-				
+		<div><a class="active" href="ruta.php?IDFile=<?php echo $_SESSION["IDFile"]?>"><img src="imagenes/back.png" width="3%" height="3%" /></div>		
 		<div id='body_div'>
 			<center><h2><?php echo $tipo ?> a través de la ruta</h2></center></br>
-
+			
 			<script src="Chart.js"></script>
 
 			<canvas id="chart-area4" width="150" height="50"></canvas>
@@ -86,11 +85,8 @@
 							?>  ]
 						}
 					]
-
 				}
-
 				var ctx4 = document.getElementById("chart-area4").getContext("2d");
-
 				window.myPie = new Chart(ctx4).Line(lineChartData, {responsive:true});
 			</script>
 		</div>

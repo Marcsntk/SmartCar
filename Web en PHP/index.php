@@ -27,7 +27,7 @@
 			?>
 			<?php
 			if ($_SESSION["idUsuario"] != "") {
-				?><div class="menu"><a href="/PHP/session_destroy.php">Cerrar Sesión</a></div><?php
+				?><div class="menu"><a class="active" href="/PHP/session_destroy.php"><img src="imagenes/exit.png" width="90%" height="90%" /></div><?php
 			}
 			?>
 			<div class="menu"><a href="mailto:andresnicolau@hotmail.com?Subject=SmartCar" target="_top">Contacto</a></div>
@@ -45,7 +45,7 @@
             	Smart Car es una herramienta para conductores que te ayudará a llegar a tu destino mientras sabes más sobre tu coche.
             </p>
             
-            <center><button onclick="window.open('https://play.google.com/store?hl=es')" target="_blank" class="descargar">¡Consíguela ahora!</button></center>
+            <center><button onclick="window.open('https://drive.google.com/file/d/0B7pGB9YGuqI3M2FzYncxOU5lQ3M/view?usp=sharing')" target="_blank" class="descargar">¡Consíguela ahora!</button></center>
             
         </article>
         

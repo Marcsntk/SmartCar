@@ -15,7 +15,7 @@
 
 .title-left{
     float: left;
-    width: 35%;
+    width: 31%;
     height: 75px;
     margin: 10px 20px;
 	text-align:left;
@@ -108,7 +108,71 @@ a:hover {
 	color: white;
 	text-decoration: none;
 }
+#info{
+	margin: 150px 0px 0px 0px;
+	clear: left;
+	width:250px;
+	height:400px;
+	background-color: #2360a5;
+	color:white;
+	font-size:80%;
+	text-align:justify;
+	border-radius: 15px;
+}
+#loginusuario, #logincontrasena{
+	margin: 10px 0px;
+	clear: left;
+	width:225px;
+	height:40px;
+	background-color: white;
+	color:black;
+	font-size:80%;
+	text-align:justify;
+	border-radius: 5px;	
+}
+#correo, #nombre {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
+	border-radius: 5px;	
+	font-size:150%;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	font-size:150%;
+}
 
+#recuperar {
+	font-size: 150%;	
+}
+
+#registro{
+	margin: 10px 0px;
+	color:white;
+	background-color: #4CAF50;	
+	border-radius: 0px 0px 15px 15px;
+}
+#cambiar{
+    
+    padding: 14px 20px;
+   
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	font-size:122%;
+	margin: 10px 0px;
+	color:white;
+	background-color: #4CAF50;	
+	border-radius: 0px 0px 15px 15px;
+}
 
 
 

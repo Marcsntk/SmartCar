@@ -26,7 +26,7 @@
 			?>
 			<?php
 			if ($_SESSION["idUsuario"] != "") {
-				?><div class="menu"><a href="/PHP/session_destroy.php">Close Session</a></div><?php
+				?><div class="menu"><a class="active" href="/PHP/session_destroy.php"><img src="imagenes/exit.png" width="90%" height="90%" /></div></div><?php
 			}
 			?>
 			<div class="menu"><a href="mailto:andresnicolau@hotmail.com?Subject=SmartCar" target="_top">Contact</a></div>
@@ -46,7 +46,7 @@
             	Smart Car is a tool for drivers that will help you to reach your destination while you know more about your car.
             </p>
             
-            <center><button onclick="window.open('https://play.google.com/store?hl=es')" target="_blank" class="descargar">Get it now!</button></center>
+            <center><button onclick="window.open('https://drive.google.com/file/d/0B7pGB9YGuqI3M2FzYncxOU5lQ3M/view?usp=sharing')" target="_blank" class="descargar">Get it now!</button></center>
             
         </article>
         
@@ -62,13 +62,13 @@
         <center><img src="imagenes/instruccionesENG.png" width="100%" height="100%" /></center></br></br>
         
         <p>
-        	Smart Car uses the technology OBDII to get important information form your car in real time, it can be the temperature of the motor or how much fuel uses.
+        	Smart Car uses the technology OBDII to get important information form your car in real time, it can be the temperature of the motor or how much fuel it uses.
 			</br></br>
-            We translate tha information for you, showing how feels the car in every moment, all of that while our GPS system of navigation guides you between the daily traffic, its easy and simple, Smart Car will remember what information do you want to see and when you have given your destiny will take care of the rest by itself.
+            We translate that information for you, showing how the car feels in every moment, all that while our GPS system of navigation guides you through the daily traffic - its easy and simple - Smart Car will remember what information you want to see and when you have given your destiny it will take care of the rest by itself.
 			</br></br>
-            When you have finished your travel you can see your route from the mobile or from our Website and know what is your driving style, if you hit the throttle too much or you're good at saving fuel.
+            When you have finished your trip you can see your route from the mobile or from our Website and know what your driving style is, if you hit the throttle too much or you're good at saving fuel.
 			</br></br>
-			For our program to work properly you will have to have the <a href="https://play.google.com/store/apps/details?id=org.prowl.torque&hl=es"  target="_blank">Torque</a> application installed, thanks to it and an OBDII adapter can help you save fuel.
+			For our program to work properly you will have to have the <a href="https://play.google.com/store/apps/details?id=org.prowl.torque&hl=es"  target="_blank">Torque</a> application installed, thanks to it and an OBDII adapter you can save fuel.
 		</p>
         
     </div>
