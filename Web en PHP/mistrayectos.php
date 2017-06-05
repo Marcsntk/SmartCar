@@ -53,13 +53,15 @@
 				</ul>
 			</center>
 		</nav> 
-		<ul>
-			<?php
-			while($row = mysqli_fetch_array($result)){
-				echo "<li><a href='ruta.php?IDFile=".$row[0]."'>".$row[0]."</a></li>";
-			}
-		?>
-		</ul>
+		<center>
+			<ul id="todo">
+				<?php
+				while($row = mysqli_fetch_array($result)){
+					echo "<li><a href='ruta.php?IDFile=".$row[0]."'>".$row[0]."</a></li>";
+				}
+			?>
+			</ul>
+		</center>
 		
 		
 		<script type="text/javascript">

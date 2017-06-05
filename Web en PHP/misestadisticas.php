@@ -52,14 +52,16 @@
 				</ul>
 			</center>
 		</nav> 
-		<ul>
-		<?php 
-			while($row = mysqli_fetch_array($result)){
-				echo "<li>Velocidad media: ".$row[0]." .</li><li> Consumo medio: ".$row[1]." .</li><li> Temperatura media: ".$row[2]." .</li><li> Distancia media: ".$row[3]." .</li>";
-			}
-			
-		?>
-		</ul>
+		<center>
+			<ul id="todo">
+			<?php 
+				while($row = mysqli_fetch_array($result)){
+					echo "<li>Velocidad media: ".$row[0]." .</li><li> Consumo medio: ".$row[1]." .</li><li> Temperatura media: ".$row[2]." .</li><li> Distancia media: ".$row[3]." .</li>";
+				}
+				
+			?>
+			</ul>
+		</center>
 		
 		<script type="text/javascript">
 			$(document).ready(function() {

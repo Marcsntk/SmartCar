@@ -173,6 +173,16 @@ button {
 	background-color: #4CAF50;	
 	border-radius: 0px 0px 15px 15px;
 }
+#todo{
+	margin: 20px;
+	background-color: #4CAF50;
+	padding: 14px 20px;
+	border-radius: 15px;
+	color:white;
+	font-size:120%;
+	width:20%;
+}
+
 
 
 
