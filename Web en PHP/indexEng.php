@@ -14,7 +14,7 @@
 		
 		<header>
 			<div class="logo"><img border="0" src="imagenes/logo.png" width="100%" height="100%"></div>
-			<div class="title-left">Smart Car</div>
+			<div class="title-left"><a href="index.php">Smart Car</div>
 			<?php
 			if ($_SESSION["idUsuario"] == "") {
 				?><div class="user"><a class="active" href="loguear.php"><img src="imagenes/usuario.png" width="100%" height="100%" /></a> </div><?php
@@ -26,12 +26,12 @@
 			?>
 			<?php
 			if ($_SESSION["idUsuario"] != "") {
-				?><div class="menu"><a class="active" href="/PHP/session_destroy.php"><img src="imagenes/exit.png" width="90%" height="90%" /></div></div><?php
+				?><div class="user"><a class="active" href="/PHP/session_destroy.php"><img src="imagenes/exit.png" width="100%" height="100%" /></a> </div><?php
 			}
 			?>
-			<div class="menu"><a href="mailto:andresnicolau@hotmail.com?Subject=SmartCar" target="_top">Contact</a></div>
+			<div class="menu"><a href="mailto:andresnicolau@hotmail.com?Subject=SmartCar" target="_top">Contacto</a></div>
 			<div class="menu"><a href="preguntas.php">F.A.Q.</a></div>
-			<div class="menu"><a href="quienessomos.php">Who we are?</a></div>
+			<div class="menu"><a href="quienessomos.php">¿Quienes somos?</a></div>	
 		</header>
     
     
