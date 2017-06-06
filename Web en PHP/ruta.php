@@ -52,10 +52,10 @@
 		</nav> 
 		<center>
 			<ul id="todo">
-				<li><a href="grafica.php?tipo=GPS_Speed">Velocidad</a></li>
-				<li><a href="grafica.php?tipo=Altitude">Perfil de la ruta</a></li>
-				<li><a href="grafica.php?tipo=TripLpHKM">Consumo de Gasolina L/100Km</a></li>
-				<li><a href="grafica.php?tipo=Engine_Temp">Temperatura del motor</a></li>
+				<li class="item"><a href="grafica.php?tipo=GPS_Speed">Velocidad</a></li>
+				<li class="item"><a href="grafica.php?tipo=Altitude">Perfil de la ruta</a></li>
+				<li class="item"><a href="grafica.php?tipo=TripLpHKM">Consumo de Gasolina L/100Km</a></li>
+				<li class="item"><a href="grafica.php?tipo=Engine_Temp">Temperatura del motor</a></li>
 			</ul>
 		</center>
 		

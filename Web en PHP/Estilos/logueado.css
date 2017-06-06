@@ -175,12 +175,18 @@ button {
 }
 #todo{
 	margin: 20px;
-	background-color: #4CAF50;
+	background-color: #2360a5;
 	padding: 14px 20px;
 	border-radius: 15px;
 	color:white;
 	font-size:120%;
 	width:20%;
+}
+.item a{
+	color:white;
+}
+.item a:hover {
+	color: black;	
 }
 
 
