@@ -40,7 +40,7 @@
         <p><h1></br>Cambiar contraseña</br></h1></p>
 		<form action="/PHP/cambiarcontra.php" method="post" role="form">
               <section id="registrousuario">
-				<input type="text" placeholder="Contraseña antigua" name="passwordold" required>
+				<input type="password" placeholder="Contraseña antigua" name="passwordold" required>
               </section>
               <section id="registrocontrasena">
 				<input type="password" placeholder="Contraseña nueva" name="passwordnew" required>
